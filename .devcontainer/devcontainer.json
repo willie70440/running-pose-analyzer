@@ -9,7 +9,7 @@
     }
   },
   
-  "postCreateCommand": "pip install -r requirements.txt",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y libgl1-mesa-glx libglib2.0-0 libsm6 libxext6 libxrender-dev libgomp1 && pip install -r requirements.txt",
   
   "forwardPorts": [7860],
   
